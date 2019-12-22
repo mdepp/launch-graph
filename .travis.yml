@@ -1,0 +1,17 @@
+matrix:
+  include:
+    - name: "Nose tests"
+      language: python
+      python: 3.8.1
+      before_script:
+        - pip install nose
+      script:
+        - nosetests
+
+    - name: "Build docker image"
+      services:
+        - docker
+      before_script:
+        - docker pull python:3.8.1
+      script:
+        - docker-compose build
