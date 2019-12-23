@@ -6,7 +6,7 @@ This is a utility I wrote to visualize include dependencies for [ROS](https://wi
 
 To set it up, clone this repository, navigate to the directory containing this Readme, and type
 ```bash
-echo "export PATH=$PATH:$(pwd)/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:$(pwd)/bin" >> ~/.bashrc
 ```
 to add the utility's script to the path (you will then need to open a new terminal or re-source bashrc with `source ~/.bashrc`).
 
