@@ -1,0 +1,14 @@
+digraph {
+	"follow_bot/kobuki.launch"
+	"follow_bot/run.launch"
+	"follow_bot/run.launch" -> "follow_bot/kobuki.launch"
+	"follow_bot/run.launch" -> "follow_bot/control.launch"
+	"follow_bot/run.launch" -> "openni2_launch/openni2.launch"
+	"follow_bot/control.launch"
+	"follow_bot/run_sim.launch"
+	"follow_bot/run_sim.launch" -> "follow_bot/simulator.launch"
+	"follow_bot/run_sim.launch" -> "follow_bot/kobuki.launch"
+	"follow_bot/run_sim.launch" -> "follow_bot/control.launch"
+	"follow_bot/simulator.launch"
+	"follow_bot/simulator.launch" -> "gazebo_ros/empty_world.launch"
+}
