@@ -67,7 +67,7 @@ def main():
         for y in get_includes(text):
             dot.edge(str(x), str(y))
 
-    dot.render('/data/launch-files.gv')
+    dot.render('/data/launch-files.gv', format='svg')
 
 
 if __name__ == '__main__':
